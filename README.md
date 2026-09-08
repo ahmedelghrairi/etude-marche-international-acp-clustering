@@ -15,7 +15,9 @@ Le choix des variables s'appuie sur une grille PESTEL, pour couvrir les dimensio
 
 Le rapprochement entre sources se fait par code ISO3 plutôt que par nom de pays, pour éviter les échecs de correspondance dus aux libellés. Résultat : 165 pays complets, couvrant 96 % de la population mondiale, bien au-delà des 100 pays et 60 % demandés.
 
-Les fichiers sources ne sont pas publiés dans ce dépôt : ils proviennent de la FAO et de la Banque mondiale et restent librement téléchargeables sur leurs sites respectifs.
+Les données sont publiées dans le dossier `data/`. La FAO et la Banque mondiale diffusent sous licence CC BY 4.0, qui autorise la redistribution avec attribution. Deux précisions : le fichier des bilans alimentaires FAO n'est pas inclus en raison de sa taille, il se télécharge librement sur FAOSTAT ; et `donnees_pretes.csv` n'est pas une donnée source mais le résultat du premier notebook, le jeu final de 165 pays prêt à analyser. Il permet d'exécuter directement le notebook d'ACP et de clustering sans refaire toute la préparation.
+
+Sources : FAO (FAOSTAT, bilans alimentaires et population), Banque mondiale (PIB par habitant, Worldwide Governance Indicators pour la stabilité politique).
 
 ## Les résultats
 
@@ -34,7 +36,7 @@ Les données portent sur 2017, année la plus complète disponible sur toutes le
 pip install -r requirements.txt
 ```
 
-Télécharger les fichiers sources depuis la FAO et la Banque mondiale, les placer dans un dossier `data/`, puis exécuter les deux notebooks dans l'ordre.
+Télécharger le fichier des bilans alimentaires sur FAOSTAT, puis exécuter les deux notebooks dans l'ordre. Le notebook 2 peut s'exécuter seul à partir de `donnees_pretes.csv`.
 
 ## Auteur
 
