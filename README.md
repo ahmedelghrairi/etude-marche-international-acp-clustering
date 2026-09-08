@@ -30,3 +30,13 @@ Recommandation retenue : cibler le groupe des pays développés, seul à réunir
 Les données portent sur 2017, année la plus complète disponible sur toutes les sources au moment de l'étude ; les conclusions valent pour cette photographie. Le clustering décrit des groupes, il ne prédit pas un succès commercial : c'est un outil de priorisation, pas une garantie. Les valeurs atypiques (géants démographiques, pays très riches, territoires très dépendants des importations) ont été conservées volontairement parce qu'elles correspondent à des réalités de marché, mais elles influencent la formation des groupes. Enfin, une étude d'implantation réelle demanderait des données que ce jeu ne contient pas : droits de douane, coûts logistiques, concurrence locale, normes sanitaires.
 
 ## Exécution
+```
+pip install -r requirements.txt
+```
+
+Télécharger les fichiers sources depuis la FAO et la Banque mondiale, les placer dans un dossier `data/`, puis exécuter les deux notebooks dans l'ordre.
+
+## Auteur
+
+Ahmed El Ghrairi, Data Analyst à Marseille.
+[Portfolio](https://ahmedelghrairi.github.io) · [LinkedIn](https://www.linkedin.com/in/ahmed-el-ghrairi-a581ba177/)
